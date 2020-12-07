@@ -168,6 +168,7 @@ Bishal Bazaar Javascript E-commerce project tutorial
     4. Implement after_render in index.js
 
 16. Add To Cart Action
+
     1. create CartScreen.js
     2. parseRequestUrl
     3. getProduct(request.id)
@@ -177,3 +178,13 @@ Bishal Bazaar Javascript E-commerce project tutorial
     7. if existItem update qty
     8. else add item
     9. setCartItems
+
+17. Cart Screen UI
+    1. Define cartItems = getCartItems() inside CartScreen.js
+    2. Create 2 columns for cart items and cart action
+    3. cartItems.length === 0 ? cart is empty
+    4. Show item image, name, quantity and price
+    5. Cart action
+    6. Subtotal
+    7. Proceed to Checkout button
+    8. Add CSS style
