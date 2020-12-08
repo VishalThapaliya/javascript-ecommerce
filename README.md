@@ -180,6 +180,7 @@ Bishal Bazaar Javascript E-commerce project tutorial
     9. setCartItems
 
 17. Cart Screen UI
+
     1. Define cartItems = getCartItems() inside CartScreen.js
     2. Create 2 columns for cart items and cart action
     3. cartItems.length === 0 ? cart is empty
@@ -188,3 +189,20 @@ Bishal Bazaar Javascript E-commerce project tutorial
     6. Subtotal
     7. Proceed to Checkout button
     8. Add CSS style
+
+18. Update and Delete Cart Items
+    1. Add qty select next to each item in CartScreen.js
+    2. Implement after_render() function
+    3. Add change event to qty select
+    4. getCartItems() and pass to addToCart()
+    5. Set force to true to addToCart()
+    6. Create rerender() as (component, areaName = 'content') in util.js
+    7. component.render and component.after_render
+    8. If force is true then rerender()
+    9. Add delete button next to each item
+    10. Add click event to qty button
+    11. Call removeFromCart(deleteButton.id)
+    12. Implement removeFromCart(id)
+    13. setCartItems( getCartItems().filter)
+    14. if id === parseRequestUrl().id? redirect to '/cart'
+    15. else rerender(CartScreen)
