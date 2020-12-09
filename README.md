@@ -191,6 +191,7 @@ Bishal Bazaar Javascript E-commerce project tutorial
     8. Add CSS style
 
 18. Update and Delete Cart Items
+
     1. Add qty select next to each item in CartScreen.js
     2. Implement after_render() function
     3. Add change event to qty select
@@ -206,3 +207,16 @@ Bishal Bazaar Javascript E-commerce project tutorial
     13. setCartItems( getCartItems().filter)
     14. if id === parseRequestUrl().id? redirect to '/cart'
     15. else rerender(CartScreen)
+
+19. Connect To MongoDB and Create Admin User
+    1. npm install mongoose in the root directory
+    2. Connect to mongodb inside server.js
+    3. Create config.js inside backend
+    4. npm install dotenv to the root directory
+    5. Create .env file in the root directory
+    6. Export PORT and MONGODB_URL inside .env file
+    7. Create models/userModel.js file inside backend folder
+    8. Create userSchema and User, and export it
+    9. Create routers/userRouter.js file in backend folder
+    10. Use userRouter inside server.js located in backend folder
+    11. Create createadmin route
