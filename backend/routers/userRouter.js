@@ -10,7 +10,7 @@ userRouter.get('/createadmin',
     try {
       const user = new User({
         name: 'admin',
-        email: 'admin@bishalbazar.com',
+        email: 'admin@example.com',
         password: 'admin',
         isAdmin: true
       });
