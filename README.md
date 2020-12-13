@@ -209,6 +209,7 @@ Bishal Bazaar Javascript E-commerce project tutorial
     15. else rerender(CartScreen)
 
 19. Connect To MongoDB and Create Admin User
+
     1. npm install mongoose in the root directory
     2. Connect to mongodb inside server.js
     3. Create config.js inside backend
@@ -220,3 +221,30 @@ Bishal Bazaar Javascript E-commerce project tutorial
     9. Create routers/userRouter.js file in backend folder
     10. Use userRouter inside server.js located in backend folder
     11. Create createadmin route
+
+20. Sign-in Screen UI
+
+    1. Create SigninScreen
+    2. Render email and password fields
+    3. Style signin form
+
+21. Sign-in Screen Backend
+    1. Create signin api in backend
+    2. Create route for /api/users/signin
+    3. Create check user name and password
+    4. If it is not ok then return 401 error
+    5. npm install body-parser in the root directory
+    6. Import bodyParser inside server.js
+    7. npm install express-async-handler
+    8. Wrap it in expressAsyncHandler
+    9. Add error middleware in server.js
+    10. Install Postman
+    11. Sent post request
+    12. Test with invalid user password
+    13. Otherwise generate token
+    14. Install jsonwebtoken
+    15. Create backend/utils.js file
+    16. Add generateToken to utils.js
+    17. Set config.JWT_SECRET to somethingsecret
+    18. Return token
+    19. Test with correct user and password

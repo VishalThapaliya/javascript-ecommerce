@@ -21,14 +21,19 @@ a:hover {
   color: #f08040;
 }
 
+input,
 button {
   font: 1.6rem helvetica;
   padding: 1rem;
   border: 0.1rem solid #808080;
   border-radius: 0.5rem;
+}
+
+button {
   cursor: pointer;
 }
 
+input:hover,
 button:hover {
   border: 0.1rem solid #404040;
 }
@@ -262,4 +267,33 @@ footer {
 .cart-list select {
   font-size: 1.3rem;
   padding: 0.5rem;
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding: 2rem;
+  border: 0.1rem solid #c0c0c0;
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+
+.form-items li {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.form-container h1 {
+  font-size: 2.5rem;
+  text-align: center;
 }

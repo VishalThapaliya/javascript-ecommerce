@@ -1,14 +1,16 @@
-import Error404Screen from './screens/Erro404Screen.js';
-import HomeScreen from './screens/HomeScreen.js';
-import ProductScreen from './screens/ProductScreen.js';
-import { parseRequestUrl } from './js/utils.js';
-import CartScreen from './screens/CartScreen.js';
+import Error404Screen from './screens/Erro404Screen';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+import { parseRequestUrl } from './js/utils';
+import CartScreen from './screens/CartScreen';
+import SigninScreen from './screens/SigninScreen';
 
 const routes = {
     '/': HomeScreen,
     '/product/:id': ProductScreen,
     '/cart/:id': CartScreen,
-    '/cart': CartScreen
+    '/cart': CartScreen,
+    '/signin': SigninScreen
 };
 
 const router = async () => {
