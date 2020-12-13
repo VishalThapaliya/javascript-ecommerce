@@ -229,6 +229,7 @@ Bishal Bazaar Javascript E-commerce project tutorial
     3. Style signin form
 
 21. Sign-in Screen Backend
+
     1. Create signin api in backend
     2. Create route for /api/users/signin
     3. Create check user name and password
@@ -248,3 +249,11 @@ Bishal Bazaar Javascript E-commerce project tutorial
     17. Set config.JWT_SECRET to somethingsecret
     18. Return token
     19. Test with correct user and password
+
+22. Sign-in Screen Action
+    1. after_render handle form submit
+    2. Create signin request in frontend
+    3. Show alert if email or password is incorrect
+    4. Add getUserInfo and setUserInfo to localStorage
+    5. Create Header component
+    6. If userInfo.email exist show user name otherwise show signin
