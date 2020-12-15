@@ -251,9 +251,26 @@ Bishal Bazaar Javascript E-commerce project tutorial
     19. Test with correct user and password
 
 22. Sign-in Screen Action
+
     1. after_render handle form submit
     2. Create signin request in frontend
     3. Show alert if email or password is incorrect
     4. Add getUserInfo and setUserInfo to localStorage
     5. Create Header component
     6. If userInfo.email exist show user name otherwise show signin
+
+23. Create Progress Indicator and Alert Component
+    1. Create overlay loading div in index.html
+    2. Style overlay loading
+    3. Create showLoading() function in util.js inside frontend
+    4. Set loading-overlay classList add active
+    5. Create hideLoading() function
+    6. Create overlay message div in index.html
+    7. Add style overlay message
+    8. Create showMessage(message, callback)
+    9. Document message-overlay set inner HTML
+    10. div > div id message-overlay-content
+    11. Show message
+    12. Button id message-overlay-close-button OK
+    13. Add class active to it
+    14. Add event listener for button to call callback
