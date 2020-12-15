@@ -1,6 +1,6 @@
 Bishal Bazaar Javascript E-commerce project tutorial
 
-[<img src="./frontend/images/homeScreen.png">]
+<img src="./frontend/images/homeScreen.png">
 
 1. Create Folder Structure
 
