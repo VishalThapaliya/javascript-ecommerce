@@ -279,8 +279,18 @@ Bishal Bazaar Javascript E-commerce project tutorial
     14. Add event listener for button to call callback
 
 24. Register Screen
+
     1. Create RegisterScreen.js
     2. Add form elements
     3. after_render handle form submit
     4. Create register request in frontend
     5. create register api in backend
+
+25. User Profile Screen
+    1. Create ProfileScreen.js
+    2. Add form elements
+    3. after_render handle form submit
+    4. Create profile update request in frontend
+    5. Create profile update api in backend
+    6. Create isAuth in utils.js and use in update profile
+    7. implement sign out

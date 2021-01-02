@@ -1,13 +1,17 @@
-import { register } from "../js/api";
-import { getUserInfo, setUserInfo } from "../js/localStorage";
+import { updateProfile } from "../js/api";
+import { getUserInfo, setUserInfo, clearUser } from "../js/localStorage";
 import { hideLoading, showLoading, showMessage } from "../js/utils";
 
-const RegisterScreen = {
+const ProfileScreen = {
   after_render: () => {
-    document.getElementById('register-form').addEventListener('submit', async (e) => {
+    document.getElementById("signout-button").addEventListener("click", () => {
+      clearUser();
+      document.location.hash = '/';
+    });
+    document.getElementById('profile-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       showLoading();
-      const data = await register({
+      const data = await updateProfile({
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
         password: document.getElementById('password').value
@@ -22,39 +26,35 @@ const RegisterScreen = {
     });
   },
   render: () => {
-    if(getUserInfo().name) {
+    const {name, email} = getUserInfo();
+
+    if(!name) {
       document.location.hash = '/';
     }
    return `
     <div class="form-container">
-      <form id="register-form">
+      <form id="profile-form">
         <ul class="form-items">
           <li>
-            <h1>Create Account</h1>
+            <h1>User Profile</h1>
           </li>
           <li>
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" required/>
+            <input type="text" name="name" id="name" value="${name}"/>
           </li>
           <li>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required/>
+            <input type="email" name="email" id="email" value="${email}"/>
           </li>
           <li>
             <label for="password">Password</label>
             <input type="password" name="password" id="password"/>
           </li>
           <li>
-            <label for="repassword">Re-enter password</label>
-            <input type="password" name="repassword" id="repassword"/>
+            <button type="submit" class="primary">Update</button>
           </li>
           <li>
-            <button type="submit" class="primary">Register</button>
-          </li>
-          <li>
-            <div>Already have an account?
-              <a href="/#/signin">Sign in</a>
-            </div>
+            <button type="button" id="signout-button">Sign out</button>
           </li>
         </ul>
       </form>
@@ -63,4 +63,4 @@ const RegisterScreen = {
   }
 }
 
-export default RegisterScreen;
+export default ProfileScreen;
