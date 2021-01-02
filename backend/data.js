@@ -65,6 +65,28 @@ export default {
             rating: 4.5,
             numReviews: 12,
             countInStock: 8
+        },
+        {
+            _id: '7',
+            name: 'Men Trousers',
+            category: 'Trousers',
+            image: '../images/product-7.png',
+            price: 35,
+            brand: 'Pull & Bear',
+            rating: 4.2,
+            numReviews: 11,
+            countInStock: 13
+        },
+        {
+            _id: '8',
+            name: 'Men Shell Pants',
+            category: 'Trousers',
+            image: '../images/product-8.png',
+            price: 45,
+            brand: 'ZARA',
+            rating: 4.4,
+            numReviews: 21,
+            countInStock: 18
         }
 
     ]
