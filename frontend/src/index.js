@@ -5,13 +5,15 @@ import { hideLoading, parseRequestUrl, showLoading } from './js/utils';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
 import Header from './components/Header';
+import RegisterScreen from './screens/RegisterScreen';
 
 const routes = {
     '/': HomeScreen,
     '/product/:id': ProductScreen,
     '/cart/:id': CartScreen,
     '/cart': CartScreen,
-    '/signin': SigninScreen
+    '/signin': SigninScreen,
+    '/register': RegisterScreen
 };
 
 const router = async () => {

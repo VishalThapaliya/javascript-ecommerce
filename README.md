@@ -262,6 +262,7 @@ Bishal Bazaar Javascript E-commerce project tutorial
     6. If userInfo.email exist show user name otherwise show signin
 
 23. Create Progress Indicator and Alert Component
+
     1. Create overlay loading div in index.html
     2. Style overlay loading
     3. Create showLoading() function in util.js inside frontend
@@ -276,3 +277,10 @@ Bishal Bazaar Javascript E-commerce project tutorial
     12. Button id message-overlay-close-button OK
     13. Add class active to it
     14. Add event listener for button to call callback
+
+24. Register Screen
+    1. Create RegisterScreen.js
+    2. Add form elements
+    3. after_render handle form submit
+    4. Create register request in frontend
+    5. create register api in backend
