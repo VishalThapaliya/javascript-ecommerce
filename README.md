@@ -1,4 +1,4 @@
-Bishal Bazaar Javascript E-commerce project tutorial
+BishalBazar Javascript E-commerce project tutorial
 
 <img src="./frontend/images/homeScreen.png">
 
@@ -287,6 +287,7 @@ Bishal Bazaar Javascript E-commerce project tutorial
     5. create register api in backend
 
 25. User Profile Screen
+
     1. Create ProfileScreen.js
     2. Add form elements
     3. after_render handle form submit
@@ -294,3 +295,14 @@ Bishal Bazaar Javascript E-commerce project tutorial
     5. Create profile update api in backend
     6. Create isAuth in utils.js and use in update profile
     7. implement sign out
+
+26. Checkout Wizard
+    1. Create CheckoutSteps.js
+    2. Create div elements for step 1 to step 4
+    3. Create redirectUser() in utils.js in Frontend
+    4. Copy profile screen and as shipping screen
+    5. Use CheckoutStep
+    6. Define getShipping and setShipping
+    7. Copy shipping screen and as payment screen
+    8. Define getPayment and setPayment
+    9. redirect user to PlaceOrder.js
